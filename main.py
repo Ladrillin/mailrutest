@@ -26,12 +26,12 @@ def test_int_3():  # Положительный тест
         assert abs(i) >= 0
 
 
-@pytest.mark.parametrize("test_input,expected", [("1 ** 0", str()),
-                                                 ("0 ** 0", str()),
-                                                 ("200 ** 0", str()),
-                                                 ("-200 ** 0", str()),
-                                                 ("-99999999999999999999 ** 0", str()),
-                                                 ("99999999999999999999 ** 0", str())])
+@pytest.mark.parametrize("test_input,expected", [("1 ** 0", str),
+                                                 ("0 ** 0", str),
+                                                 ("200 ** 0", str),
+                                                 ("-200 ** 0", str),
+                                                 ("-99999999999999999999 ** 0", str),
+                                                 ("99999999999999999999 ** 0", str)])
 def test_string_1(test_input, expected):
     assert isinstance(str(test_input), expected)
 
